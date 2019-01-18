@@ -8,7 +8,8 @@
 </head>
 <body>
 <script>
-    var folder = "galerie/";
+    console.log("test");
+    var folder = "./galerie/";
 
     $.ajax({
         headers: {"Access-Control-Allow-Origin": "*"},
@@ -22,6 +23,9 @@
                 }
             });
         }
+        error:  function(data){
+    console.log(data);
+    }
     });
 </script>
 
